@@ -12,7 +12,7 @@ CC = xtensa-lx106-elf-gcc
 CFLAGS = -I. -I include -mlongcalls -g
 
 # And these are all the options passed to the linker ... mainly which libraries to link (main, net80211, etc).
-# All these libraries live in /home/brett/esp-open-sdk/sdk/lib and are prefixed with "lib".  Also note that 
+# All these libraries live in $HOME/esp-open-sdk/sdk/lib and are prefixed with "lib".  Also note that 
 # these libraries are nothing more than object files (.o) compressed into an ar archive.
 #
 LDLIBS = -nostdlib -Wl,--start-group -lmain -lnet80211 -lwpa -llwip -lpp -lphy -lc -Wl,--end-group -lgcc
